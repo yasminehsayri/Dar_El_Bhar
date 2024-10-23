@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease-out;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.hidden {
+    display: none;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+header {
+    position: relative;
+    height: 20vh;
+    background-color: rgb(44, 74, 22);
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+}
+
+.logo {
+    display: flex;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 1rem;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.container video {
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    margin-bottom: 80px;
+    padding-bottom: 180px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-variant: small-caps;
+}
+
+.banner-text h1 {
+    font-size: 80px;
+}
+
+.banner-text p {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.banner-text {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 150px;
+    z-index: 2;
+}
+
+.banner-btn {
+    margin: 70px auto 0;
+}
+
+.banner-btn a {
+    color: inherit;
+    padding: 12px 0;
+    width: 120px;
+    display: inline-block;
+    font-variant: small-caps;
+    border: 2px solid rgb(44, 74, 22);
+    margin: 0 10px;
+    position: relative;
+    z-index: 1;
+    transition: color 1.5s ease;
+    background-color: rgba(44, 0, 0, 0.2);
+}
+
+.banner-btn a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(44, 74, 22);
+    transition: width 1.5s ease;
+    z-index: -1;
+}
+
+.banner-btn a:hover span {
+    width: 100%;
+}
+
+.banner-btn a:hover {
+    color: initial;
+}
+
+#services {
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 10px;
+    margin-top: 420px;
+    background-color: rgb(44, 74, 22);
+    color: bisque;
+    font-size: 50px;
+}
+
+.services {
+    padding: 60px 150px 0 150px;
+    display: grid;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+    row-gap: 20px;
+    background: linear-gradient(rgb(44, 74, 22), white);
+}
+
+.services div img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+h3 {
+    color: rgb(204, 139, 101);
+    margin-top: 50px;
+    padding: 5px;
+    background-color: #104c0aa7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    border-radius: 20px;
+}
+
+section p {
+    text-align: justify;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #22342157;
+    border-radius: 5px;
+    font-weight: 200;
+    letter-spacing: 0.75px;
+    line-height: 20px;
+}
+
+
+#sideNav {
+    margin: 10px 5%;
+    padding: 15px 10px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+#sideNav a.top-link {
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 20px;
+    background-color: rgba(186, 186, 78, 0.662);
+    font-size: larger;
+}
+
+#sideNav a.top-link:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(127, 127, 54, 0.662);
+    border-bottom: 3px solid #063b22;
+
+}
+#sideNav a.top-link:visited{
+    color: white;
+}
+.header-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  
